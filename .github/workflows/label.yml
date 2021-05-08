@@ -17,3 +17,12 @@ jobs:
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        
+        
+        - name: Fortify on Demand Scan
+  # You may pin to the exact commit or the version.
+  # uses: fortify/gha-setup-fod-uploader@636f3c3a14aec1747eec5242a02c6349e4f3cce6
+  uses: fortify/gha-setup-fod-uploader@v1.0.1
+  with:
+    # FoDUploader version to use
+    version: # default is latest
